@@ -1,19 +1,18 @@
-import streamlit as st
+import json
 from langchain_engine.wiki_loader import fetch_wikipedia_summary
 
-st.set_page_config(page_title="🕰️ TimePlay", layout="centered")
+with open("data/personas.json", "r") as f:
+    persona_data = json.load(f)
 
 st.title("🕰️ TimePlay: Historic Roleplay Engine")
-st.markdown("Choose a year and culture to spawn a legendary figure.")
+st.markdown("Enter a time in history and become someone legendary.")
 
-year = st.text_input("Enter Year", placeholder="e.g., 500 BC, 1800, 1000 AD")
-culture = st.selectbox("Select a Culture", ["Greek", "Yoruba", "Japanese", "Roman", "Egyptian"])
+culture = st.selectbox("🌍 Select a Culture / Era", list(persona_data.keys()))
+year = st.selectbox("📅 Pick a Year", list(persona_data[culture].keys()))
+character = st.selectbox("🧬 Choose a Character", persona_data[culture][year])
 
 if st.button("Spawn Character"):
-    st.success(f"🧬 Booting simulation for {culture} in the year {year}...")
+    st.success(f"🧠 Generating backstory for {character}...")
 
-    # Temporary test call
-    if culture == "Greek":
-        st.subheader("🧠 Character Summary")
-        summary = fetch_wikipedia_summary("Socrates")
-        st.write(summary)
+    st.subheader("📜 Character Summary")
+    st.write(fetch_wikipedia_summary(character))
