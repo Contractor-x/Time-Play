@@ -1,1 +1,45 @@
-
+{
+  "Greek": {
+    "500 BC": ["Socrates", "Plato", "Aristotle"],
+    "300 BC": ["Alexander the Great"],
+    "general": ["Hippocrates"]
+  },
+  "Yoruba": {
+    "1000 AD": ["Oduduwa", "Ogun"],
+    "1200 AD": ["Sango"],
+    "general": ["Orunmila"]
+  },
+  "Japanese": {
+    "1700": ["Oda Nobunaga", "Momotaro"],
+    "1940": ["Hirohito"],
+    "general": ["Amaterasu", "Tokugawa Ieyasu"]
+  },
+  "Indian": {
+    "1900": ["Mahatma Gandhi", "Rabindranath Tagore"],
+    "general": ["Ashoka", "Chanakya", "Shivaji", "Krishna"]
+  },
+  "World War II": {
+    "1940": ["Adolf Hitler", "Winston Churchill", "Joseph Stalin"]
+  },
+  "Hacktivist": {
+    "2020": ["Shadow Brokers", "Anonymous"]
+  },
+  "Roman": {
+    "general": ["Julius Caesar", "Cicero", "Seneca", "Augustus"]
+  },
+  "Egyptian": {
+    "general": ["Cleopatra", "Imhotep", "Tutankhamun", "Ramses II"]
+  },
+  "Hausa": {
+    "general": ["Bayajidda", "Queen Amina", "Usman Dan Fodio"]
+  },
+  "Norse": {
+    "general": ["Odin", "Thor", "Loki", "Freya"]
+  },
+  "Mayan": {
+    "general": ["Pacal the Great", "Itzamna", "Kukulkan"]
+  },
+  "Chinese": {
+    "general": ["Confucius", "Sun Tzu", "Wu Zetian", "Qin Shi Huang"]
+  }
+}
