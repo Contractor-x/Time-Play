@@ -1,1 +1,1 @@
-This is the official repo for Time~play graphical game.
+This is the official repo for the  Time~play graphical game.
