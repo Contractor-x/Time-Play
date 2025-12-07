@@ -12,7 +12,7 @@ year = st.selectbox("📅 Pick a Year", list(persona_data[culture].keys()))
 character = st.selectbox("🧬 Choose a Character", persona_data[culture][year])
 
 if st.button("Spawn Character"):
-    st.success(f"🧠 Generating backstory for {character}...")
+    st.success(f" Generating backstory for {character}...")
 
     st.subheader("📜 Character Summary")
     st.write(fetch_wikipedia_summary(character))
